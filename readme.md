@@ -1,4 +1,5 @@
-#ABPacher
+#ABPatcher
 
-Simple patcher for the upcoming airbrawl tournament
+Simple patcher for the upcoming air brawl tournament
+
 TODO: Cleanups
