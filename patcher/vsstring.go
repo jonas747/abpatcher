@@ -39,7 +39,7 @@ func findDLLPath() {
 	} else {
 		// A little more complicated then... so we prompt the user for which directory is the datafolder
 		for index, item := range dirs {
-			fmt.Printf("[%d]: %s", index+1, item.Name())
+			fmt.Printf("[%d]: %s\n", index+1, item.Name())
 		}
 		for {
 			fmt.Println("What folder is the airbrawl data folder? (enter a number)")
@@ -54,6 +54,7 @@ func findDLLPath() {
 			}
 			dir := dirs[index]
 			DLLPATH = dir.Name() + "/Managed/Assembly-CSharp.dll"
+			break
 		}
 	}
 }
