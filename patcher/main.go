@@ -12,8 +12,8 @@ import (
 const (
 	VSLENGTH         = 31
 	ORIGINAL_VERSION = "Air Brawl 0.701"
-	//VSSERVER         = "http://localhost:7448/version" // Server which we get our version string from
-	VSSERVER = "http://home.jonas747.com:7448/version" // Server which we get our version string from
+	VSSERVER         = "http://localhost:7448/version" // Server which we get our version string from
+	//VSSERVER = "http://home.jonas747.com:7448/version" // Server which we get our version string from
 )
 
 var (
@@ -22,6 +22,8 @@ var (
 
 func main() {
 	fmt.Println("Starting abpatcher for airbrawl tournament!")
+	findDLLPath()
+	fmt.Println("Set DLL Path to ", DLLPATH)
 	actionLoop()
 }
 
@@ -123,6 +125,7 @@ func applyVersion(version string) {
 		return
 	}
 	fmt.Println("Successfully applied version: ", version)
+	fmt.Println("You can now (re)start airbrawl!")
 }
 
 type Response struct {
