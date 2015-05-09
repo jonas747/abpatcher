@@ -12,8 +12,8 @@ import (
 const (
 	VSLENGTH         = 31
 	ORIGINAL_VERSION = "Air Brawl 0.701"
-	VSSERVER         = "http://localhost:7448/version" // Server which we get our version string from
-	//VSSERVER = "http://home.jonas747.com:7448/version" // Server which we get our version string from
+	//VSSERVER         = "http://localhost:7448/version" // Server which we get our version string from
+	VSSERVER = "http://home.jonas747.com:7448/version" // Server which we get our version string from
 )
 
 var (
